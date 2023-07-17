@@ -188,59 +188,59 @@ const y = [];
 //exercises
 
 //napisz funkcje która zwraca najwyższa wartośc
-function max(collection){
-    let maxValue = collection[0];
+//function max(collection){
+//    let maxValue = collection[0];
 
-    for (const digit of collection){
-        if(digit > maxValue){
-            maxValue = digit;
-        }
-    }
-    return maxValue;
-}
+ //   for (const digit of collection){
+//        if(digit > maxValue){
+//            maxValue = digit;
+//        }
+ //   }
+//    return maxValue;
+//}
 
 
 
-console.log(max([1, 2, 3, 4, 5, 2, 42, 30, 120]));
+//console.log(max([1, 2, 3, 4, 5, 2, 42, 30, 120]));
 
 //napisz funkcje, ktora zwraca nazwe dnia tygodni ana podstawie liczby, 1- sunday, 7 - saturday
 
 
-function getDayName(value){
+//function getDayName(value){
 
-    switch(value){
+//    switch(value){
 
-        case 1:
-            console.log("Sunday")
+//        case 1:
+//            console.log("Sunday")
 
-            break;
-        case 2:
-            console.log("Monday")
-            break;
-        case 3:
-            console.log("Tuesday")
-            break;
-        case 4:
-            console.log("Wednesday")
-            break;
-        case 5:
-            console.log("Thursday")
-            break;
-        case 6:
-            console.log("Friday")
-            break;
-        case 7:
-            console.log("Saturday")
-            break;
+//            break;
+ //       case 2:
+ //           console.log("Monday")
+ //           break;
+ //       case 3:
+//            console.log("Tuesday")
+ //           break;
+ //       case 4:
+//            console.log("Wednesday")
+//            break;
+//        case 5:
+ //           console.log("Thursday")
+ //           break;
+ //       case 6:
+ //           console.log("Friday")
+ //           break;
+ //       case 7:
+ //           console.log("Saturday")
+ //           break;
 
-        default:
-            console.log("Nie podano dnia")
-    }
+ //       default:
+//            console.log("Nie podano dnia")
+//    }
 
-}
+//}
 
 
-//console.log(getDayName(4));
+// console.log(getDayName(4));
 
 //const getDayName1 = (dayIndex) => {
 
