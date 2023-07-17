@@ -131,3 +131,172 @@ const magic2 = () => {
 
 //to samo co wyżej
  const magic3 = () => ({a: 42})
+
+// Control Flow
+
+//if (condition){
+    //true
+//}else if (condition2){
+    //true if condition false and condition 2 true
+//}else {
+
+    //default
+//}
+//switch(value){
+
+  //  case 1:
+       //logic
+    //    break;
+    //case 2:
+       //logic
+      //  break;
+   //default:
+       //logic
+//}
+
+// loops
+
+const x = [1, 2, 3];
+const y = [];
+
+//for (let i=0; i <x.length; i++){
+
+//    y.push(x[i] * 2)
+//}
+
+//console.log(y);
+
+//for off
+//for (const item of x){
+//    y.push(item * 2);
+//}
+
+// while jeżeli nie wiemy ile literacji, for jeżeli wiemy
+//while (condition {
+//    //logic
+//})
+//let index = 0;
+
+
+//while (index < x.length){
+//    y.push(x[index] * 2);
+//    index++;
+//}
+
+// do {} while ( condition)
+
+//exercises
+
+//napisz funkcje która zwraca najwyższa wartośc
+function max(collection){
+    let maxValue = collection[0];
+
+    for (const digit of collection){
+        if(digit > maxValue){
+            maxValue = digit;
+        }
+    }
+    return maxValue;
+}
+
+
+
+console.log(max([1, 2, 3, 4, 5, 2, 42, 30, 120]));
+
+//napisz funkcje, ktora zwraca nazwe dnia tygodni ana podstawie liczby, 1- sunday, 7 - saturday
+
+
+function getDayName(value){
+
+    switch(value){
+
+        case 1:
+            console.log("Sunday")
+
+            break;
+        case 2:
+            console.log("Monday")
+            break;
+        case 3:
+            console.log("Tuesday")
+            break;
+        case 4:
+            console.log("Wednesday")
+            break;
+        case 5:
+            console.log("Thursday")
+            break;
+        case 6:
+            console.log("Friday")
+            break;
+        case 7:
+            console.log("Saturday")
+            break;
+
+        default:
+            console.log("Nie podano dnia")
+    }
+
+}
+
+
+//console.log(getDayName(4));
+
+//const getDayName1 = (dayIndex) => {
+
+ //   switch (dayIndex){
+//        case 1:
+//            return "Sunday"
+
+
+ //       case 2:
+//            return "Monday"
+
+  //      case 3:
+   //         return  "Tuesday"
+
+ //       case 4:
+ //           return  "Wednesday"
+//
+  //      case 5:
+  //          return "Thursday"
+
+ //       case 6:
+ //           return "Friday"
+
+//        case 7:
+ //           return "Saturday"
+ //       default:
+//            return "aha"
+//
+//    }
+//}
+//console.log(getDayName1(14));
+
+
+
+//const getDayName3 = (dayIndex) => {
+//    if (dayIndex < 0 || dayIndex > 7 ) throw new Error('Invalid index day')
+//    return  ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ][dayIndex - 1];
+
+//}
+
+//console.log(getDayName3(2))
+
+
+//Policz średnią elemntów z tablicy
+
+
+const calculateAvg = (numbers) => {
+let sum = 0;
+
+ for(const number of numbers){
+     sum += number;
+
+    }
+ return sum / numbers.length;
+}
+
+
+
+console.log(calculateAvg([1, 2, 3, 4, 5]));
